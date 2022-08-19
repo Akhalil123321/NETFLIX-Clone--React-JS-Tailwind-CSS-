@@ -3,7 +3,7 @@ import { FaHeart, FaRegHeart } from 'react-icons/fa';
 const Movie = ({item}) => {
     const[favourite,setFavourite] = React.useState(false)
     return (
-        <div className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 text-white'>
+        <div className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 text-white flex-shrink-0'>
         <img 
         className='w-full h-auto block'
         src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`} 

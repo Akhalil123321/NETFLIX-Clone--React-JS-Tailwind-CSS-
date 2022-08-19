@@ -21,7 +21,7 @@ const Row = ({ title, fetchURL, rowID }) => {
         <div>
             <h2 className='text-white font-bold md:text-xl p-5'>{title}</h2>
             <div className='relative flex items-center'>
-                <div className='px-4' id='slider'>
+                <div className=' w-[100%] px-4 flex overflow-scroll' id='slider'>
                     {movie.map((item, id) => (
                         <Movie key={id} item={item}/>
                     ))}

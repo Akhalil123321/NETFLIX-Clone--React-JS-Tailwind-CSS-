@@ -30,14 +30,14 @@ const Hero = () => {
                 title={randomeMovie?.title} 
                 />
                 <div className='flex flex-col gap-3 px-5 absolute w-full h-[550px] top-0 justify-center'>
-                    <h1 className=' text-2xl'>{randomeMovie?.title} </h1>
+                    <h1 className='text-2xl sm:text-4xl md:text-6xl'>{randomeMovie?.title} </h1>
                     <span className=' text-gray-500'>{randomeMovie?.release_date}</span>
-                    <span className=' w-full md:max-w-[70%]'>
+                    <span className=' w-full max-w-[90%] sm:max-w-[70%] md:max-w-[40%]'>
                         {etc(randomeMovie?.overview, 150)}
                         </span>
                     <div>
-                        <button className='border bg-gray-300 text-black border-gray-300 py-2 px-5'>Play</button>
-                        <button className='border text-white border-gray-300 py-2 px-5 ml-4'>Watch Later</button>
+                        <button className='border bg-gray-300 text-black border-gray-300 py-2 px-5 text-[10px] sm:text-[15px] md:text-[20px]'>Play</button>
+                        <button className='border text-white border-gray-300 py-2 px-5 ml-4 text-[10px] sm:text-[15px] md:text-[20px]'>Watch Later</button>
                     </div>
                 </div>
             </div>
