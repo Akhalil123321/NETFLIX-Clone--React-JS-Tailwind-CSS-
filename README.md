@@ -1,1 +1,1 @@
-# NETFLIX-Clone--React-JS-Tailwind-CSS-
+# NETFLIX-Clone-React.js-Tailwind-CSS
