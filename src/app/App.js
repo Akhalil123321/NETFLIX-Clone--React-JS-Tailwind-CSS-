@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../components/pages/Home';
-import Login from '../components/pages/Login';
-import Signup from '../components/pages/Signup';
+import Home from '../pages/Home';
+import Login from '../pages/Login';
+import Signup from '../pages/Signup';
 import { AuthContextProvider } from '../components/context/AuthContext';
-import Account from '../components/pages/Account';
+import Account from '../pages/Account';
 import NavBar from '../components/navBar/NavBar';
+import ProtectedRoute from '../components/productedRoute/ProtectedRoute';
 import './App.css';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/login' element={<Login />} />
 				<Route path='/signup' element={<Signup />} />
-				<Route path='/account' element={<Account />} />
+				<Route path='/account' element={<ProtectedRoute><Account /></ProtectedRoute>} />
 			</Routes>
 		</AuthContextProvider>
 	</div>
